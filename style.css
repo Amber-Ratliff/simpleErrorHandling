@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FF7F4A;
+    color: #0e4a34;
+}
+.button-container {
+    margin-bottom: 5vh;
+}
+.results-container {
+    margin-top: 5vh;
+}
+#button {
+    margin-top: 2.5vh;
+    background-color: #36454F;
+    padding: 2em;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+li:nth-child(even) {
+    color: #0e4a34;
+}
+li:nth-child(odd) {
+    color: #fff;
+}
