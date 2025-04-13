@@ -1,3 +1,6 @@
+//global variable definitions
+const button = document.getElementById('button');
+
 //function for input and simple error handling
 function errorCheck() {
     let num;
@@ -15,17 +18,20 @@ function errorCheck() {
     while (true)
     }
 
-function factorial() {
+function factorial(event) {
+    const list = document.getElementById('factorial-results');
     let num = errorCheck();
     let result = 1;
     for (let i = 1; i <= num; i++) {
         result *= i;
     }
-    alert(`The factorial of ${num} is: \n${result}`);
+    const listItem = document.createElement('li');
+    listItem.textContent = `The factorial for ${num} is: ${result}.`;
+    list.appendChild(listItem);
     return result;
 }
 //initial function call
-factorial();
+button.addEventListener('click', factorial);
 
 
 
